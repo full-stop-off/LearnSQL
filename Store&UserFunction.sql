@@ -8,7 +8,7 @@ use Org;
 
 create table Employee(
   	empId int primary key, -- identity(1,1) -> gaps can be seen in auto increment
-  	empName nvarchar(50) not null unique
+  	empName nvarchar(50) not null unique,
   	empsalary decimal(12,2) default(1000) not null,
   	empAddress nvarchar(50) null
   );
